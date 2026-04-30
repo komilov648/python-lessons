@@ -71,3 +71,15 @@ print(student_info('Jumagul'"Umrzoqv", year = 2005))
 
 
 
+def find_max(*numbers):
+    if len(numbers) == 0:
+        return None
+    max_number = numbers[0]
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+
+    return max_number
+
+print(find_max(3, 7, 2, 9, 5)) # 9
+print(find_max()) # None    
